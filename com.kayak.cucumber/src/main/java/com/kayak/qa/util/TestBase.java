@@ -17,7 +17,7 @@ public class TestBase {
 	public TestBase() {
 		try {
 			prop = new Properties();
-			FileInputStream fis = new FileInputStream("/Users/ranjanabanga/eclipse-workspace/qa/com.kayak.cucumber/"
+			FileInputStream fis = new FileInputStream("/Users/ranjanabanga/git/repository/com.kayak.cucumber/"
 													+ "src/main/java/com/kayak/qa/config/config.properties");
 			prop.load(fis);
 		}catch(IOException e) {

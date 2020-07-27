@@ -1,5 +1,6 @@
 package com.kayak.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -11,11 +12,11 @@ public class kayakSearchPage extends TestBase {
 	// Page Factory -- OR:
 	//@FindBy(xpath="//div[@id='GLT4-origin-airport-textInputWrapper']//input[@id='GLT4-origin-airport']");
 	
-	@FindBy(xpath="//a[@id='IlVD']")
+	@FindBy(xpath="//ul[@class='keel-grid _jrD _jrE _joN _joO']//li/descendant::a[@id='ZM4h']")
 	static
 	WebElement flights;
 	
-	@FindBy(xpath="//div[@id='Ti_Y-origin-airport-display-multi-container']//button[@class='Button-No-Standard-Style js-remove-selection _iae _h-Y']//*[local-name()='svg']")
+	@FindBy(xpath="//div[@id='yGfa-origin-airport-display-multi-container']//div[@class='_iac _irF _Hk _h-8']//button[@type='button']")
 	static
 	WebElement crossSign;
 	
@@ -53,6 +54,7 @@ public class kayakSearchPage extends TestBase {
 		return driver.getTitle();
 	}
 	public void clickFlight() {
+		
 		flights.click();
 	}
 	public void crossSign() {
